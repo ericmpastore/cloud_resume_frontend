@@ -58,6 +58,20 @@
 */
 
 class SessionAwareVisitorCounter
-{
-  
+{ 
+  //Class constructor, initializes link to API for DB and current user session key
+  //EPastore, 03/14/2026
+  SessionAwareVisitorCounter()
+  {
+    this.API_ENDPOINT = "<your-cloud-function-or-lambda-url>";
+    this.SESSION_KEY = "current visitor count";
+  }
+
+  //Check browser sessionStorage and reads count, only increment if new visitor
+  //Currently reads sessionStorage, will read from Cloud SQL in later versions
+  //Epastore, 03/14/2026
+  handleVisit()
+  {
+    
+  }
 }
