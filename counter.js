@@ -56,3 +56,8 @@
 
     END PROGRAM
 */
+
+class SessionAwareVisitorCounter
+{
+  
+}
