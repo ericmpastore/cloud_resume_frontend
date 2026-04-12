@@ -72,6 +72,42 @@ class SessionAwareVisitorCounter
   //Epastore, 03/14/2026
   handleVisit()
   {
-    
+    //alreadyCounted = READ sessionStorage value at key SESSION_KEY
+
+    //IF alreadyCounted is "true":
+    //   -- This tab already triggered a count increment; just display current count
+    //   CALL fetchAndDisplayCount(shouldIncrement = FALSE)
+    // ELSE:
+    //   -- First visit in this session; increment, then record it
+    //   CALL fetchAndDisplayCount(shouldIncrement = TRUE)
+    //   WRITE "true" to sessionStorage at key SESSION_KEY
+
+
+
+  }
+
+  displayCount()
+  {
+      // TRY:
+      //     IF shouldIncrement is TRUE:
+      //       METHOD = "POST"   -- backend increments and returns new count
+      //     ELSE:
+      //       METHOD = "GET"    -- backend returns current count without changing it
+
+      //     SEND HTTP request with METHOD to API_ENDPOINT
+      //     AWAIT response
+
+      //     IF response status is NOT OK:
+      //       THROW error
+
+      //     PARSE response body as JSON
+      //     EXTRACT count value
+
+      //     FIND element with id="visitor-count"
+      //     SET element text to count value
+
+      //   CATCH any error:
+      //     LOG error to console
+      //     SET element text to "N/A"
   }
 }
