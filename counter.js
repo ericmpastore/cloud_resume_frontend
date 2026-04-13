@@ -72,6 +72,7 @@ class SessionAwareVisitorCounter
   //Epastore, 03/14/2026
   handleVisit()
   {
+    //Epastore, 04/13/2026
     //alreadyCounted = READ sessionStorage value at key SESSION_KEY
 
     //IF alreadyCounted is "true":
@@ -88,6 +89,7 @@ class SessionAwareVisitorCounter
 
   displayCount()
   {
+      // EPastore, 04/13/2026
       // TRY:
       //     IF shouldIncrement is TRUE:
       //       METHOD = "POST"   -- backend increments and returns new count
