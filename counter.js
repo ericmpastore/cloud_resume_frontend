@@ -61,7 +61,7 @@ class SessionAwareVisitorCounter
 { 
   //Class constructor, initializes link to API for DB and current user session key
   //EPastore, 03/14/2026
-  SessionAwareVisitorCounter()
+  constructor()
   {
     this.API_ENDPOINT = "<your-cloud-function-or-lambda-url>";
     this.SESSION_KEY = "current visitor count";
