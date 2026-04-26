@@ -74,20 +74,28 @@ class SessionAwareVisitorCounter
   {
     //Epastore, 04/13/2026
     //alreadyCounted = READ sessionStorage value at key SESSION_KEY
-
-    //IF alreadyCounted is "true":
-    //   -- This tab already triggered a count increment; just display current count
-    //   CALL fetchAndDisplayCount(shouldIncrement = FALSE)
-    // ELSE:
-    //   -- First visit in this session; increment, then record it
-    //   CALL fetchAndDisplayCount(shouldIncrement = TRUE)
-    //   WRITE "true" to sessionStorage at key SESSION_KEY
+    const alreadyCounted = sessionStorage.getItem(this.SESSION_KEY);
 
 
 
+    if (alreadyCounted === "true")
+    {
+        //IF alreadyCounted is "true":
+        //   -- This tab already triggered a count increment; just display current count
+        //   CALL displayCount(shouldIncrement = FALSE)
+        this.displayCount(false);
+    } else
+        {
+            // ELSE:
+            //   -- First visit in this session; increment, then record it
+            //   CALL displayCount(shouldIncrement = TRUE)
+            //   WRITE "true" to sessionStorage at key SESSION_KEY
+            this.displayCount(true);
+            sessionStorage.setItem(this.SESSION_KEY, "true");
+        }
   }
 
-  displayCount()
+  async displayCount()
   {
       // EPastore, 04/13/2026
       // TRY:
