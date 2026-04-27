@@ -95,10 +95,16 @@ class SessionAwareVisitorCounter
         }
   }
 
-  async displayCount()
+  async displayCount(shouldIncrement)
   {
       // EPastore, 04/13/2026
-      // TRY:
+      try
+      {
+        const method = shouldIncrement ? "POST":"GET";
+      } catch(error)
+        {
+
+        }
       //     IF shouldIncrement is TRUE:
       //       METHOD = "POST"   -- backend increments and returns new count
       //     ELSE:
