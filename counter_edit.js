@@ -57,14 +57,12 @@
     END PROGRAM
 */
 
-class SessionAwareVisitorCounter
-{
+class SessionAwareVisitorCounter {
   // --- CONSTRUCTOR ---
   // In JavaScript, every class uses the special keyword `constructor` (not the class name).
   // The `this` keyword refers to the specific instance being created, binding these
   // properties to that object so all methods can access them via `this.PROPERTY_NAME`.
-  constructor()
-  {
+  constructor() {
     this.API_ENDPOINT = "<your-cloud-function-or-lambda-url>";
     // SESSION_KEY is the string label used to read/write to sessionStorage.
     // Using a constant here prevents typos — change it in one place and it updates everywhere.
@@ -74,8 +72,7 @@ class SessionAwareVisitorCounter
   // --- handleVisit() ---
   // Called once on page load. Decides whether this tab has already been counted
   // by checking sessionStorage, then delegates to fetchAndDisplayCount().
-  handleVisit()
-  {
+  handleVisit() {
     // sessionStorage.getItem(key) reads a value for the given key.
     // It returns the stored string, or null if nothing has been saved yet.
     // sessionStorage is scoped to the browser tab — closing the tab wipes it automatically.
@@ -98,8 +95,7 @@ class SessionAwareVisitorCounter
   // The `async` keyword marks this function as asynchronous, which unlocks the `await`
   // keyword inside it. Without `async`, using `await` is a syntax error.
   // An async function always returns a Promise, even if you don't explicitly return one.
-  async fetchAndDisplayCount(shouldIncrement)
-  {
+  async fetchAndDisplayCount(shouldIncrement) {
     try {
       // Ternary operator: condition ? valueIfTrue : valueIfFalse
       // POST tells the backend to increment the counter and return the new value.
