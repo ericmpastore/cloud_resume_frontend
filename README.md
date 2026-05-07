@@ -9,6 +9,7 @@ With cloud platforms like Google Cloud Platform (GCP) an essential part of data 
 - Added security roles to storage bucket
 - Loaded project files to storage bucket
 - Granted access to allUsers allowing index.html to be visible at https://storage.googleapis.com/cloud-resume-pastore/index.html
+- Planned setup of GCP load balancer and https protocol for cloud resume
 
 
 
