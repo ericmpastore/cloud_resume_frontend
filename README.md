@@ -14,6 +14,8 @@ With cloud platforms like Google Cloud Platform (GCP) an essential part of data 
 - Reserved custom url, EPastore 07/16/2026
 - Continued troublshooting of load balancer and custom URL, EPastore 07/16/2026
 - Continued troublshooting of load balancer and custom URL, EPastore 07/17/2026
+- Confirmed SSL certificate not registered, forwarding rule not pointing to correct IP address, corrected rule and added DNS A record, will check URL in 24 hours, EPastore 07/18/2026
+
 
 
 
