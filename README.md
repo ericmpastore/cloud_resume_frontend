@@ -17,6 +17,7 @@ With cloud platforms like Google Cloud Platform (GCP) an essential part of data 
 - Confirmed SSL certificate not registered, forwarding rule not pointing to correct IP address, corrected rule and added DNS A record, will check URL in 24 hours, EPastore 07/18/2026
 - Confirmed SSL certificate registered, updated load balancer to direct to index.html, enabled http to https redirect and will check in 24 hours, EPastore 07/19/2026
 - Set up Google Cloud SQL database for visitor counts, EPastore 07/20/2026
+- Set up first Cloud SQL user and verified HTTPS functioning on site, EPastore 07/21/2026
 
 
 
