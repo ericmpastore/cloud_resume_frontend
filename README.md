@@ -20,6 +20,7 @@ With cloud platforms like Google Cloud Platform (GCP) an essential part of data 
 - Set up first Cloud SQL user and verified HTTPS functioning on site, EPastore 07/21/2026
 - Set up DB for cloud resume project, EPastore 07/22/2026
 - Set up Visitors table, Cloud Run function, EPastore 07/23/2026
+- Began setup of API interface for Visitors table, EPastore 08/05/2026
 
 
 
