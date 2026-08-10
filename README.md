@@ -22,6 +22,7 @@ With cloud platforms like Google Cloud Platform (GCP) an essential part of data 
 - Set up Visitors table, Cloud Run function, EPastore 07/23/2026
 - Began setup of API interface for Visitors table, EPastore 08/05/2026
 - Continued setup of API interface, EPastore 08/07/2026
+- Posted Linkedin post on cloud storage, EPastore 08/10/2026
 
 
 
