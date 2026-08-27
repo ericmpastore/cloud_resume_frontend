@@ -12,11 +12,6 @@
 
 const API_BASE_URL = "https://<cloud_run_url>";
 
-// NOTE: This key is embedded in public JS and is not a secret.
-// It only serves to filter casual/automated traffic — real
-// protection should rely on Cloud Run's own access controls
-// (e.g. rate limiting) rather than this key.
-
 const API_KEY = "<public_key>";
 
 // Function to count visitor hits by writing visitor counts to and from an API, EPastore 08/11/2026
@@ -24,7 +19,7 @@ async function countHits()
 {
     try
     {
-        const response = await fetch(`${API_BASE_URL}/increment`,
+        const response = await fetch(`${'https://cloud-resume-backend-171016874981.us-east4.run.app'}/increment`,
         {
             method: "POST",
             headers:
