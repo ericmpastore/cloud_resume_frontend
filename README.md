@@ -24,6 +24,7 @@ With cloud platforms like Google Cloud Platform (GCP) an essential part of data 
 - Continued setup of API interface, EPastore 08/07/2026
 - Posted Linkedin post on cloud storage, EPastore 08/10/2026
 - Set up Cloud Build trigger to update storage bucket, EPastore 08/28/2026
+- Continued building out repository, EPastore 08/29/2026
 
 
 
