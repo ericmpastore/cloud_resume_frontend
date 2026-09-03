@@ -1,0 +1,10 @@
+   - name: 'gcr.io/cloud-builders/gcloud'
+     entrypoint: 'gcloud'
+     args:
+       - 'compute'
+       - 'url-maps'
+       - 'invalidate-cdn-cache'
+       - 'YOUR_URL_MAP_NAME'
+       - '--path'
+       - '/*'
+       - '--global'
