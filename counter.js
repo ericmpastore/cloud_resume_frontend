@@ -1,5 +1,5 @@
  /*
-     Visitor Counter Application, 08/11/2026, EPastore
+     Visitor Counter Application, 09/04/2026, EPastore
 
      Expected Cloud Run API contract:
        POST {API_BASE_URL}/increment
